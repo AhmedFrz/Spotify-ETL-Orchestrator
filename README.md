@@ -17,12 +17,7 @@
 
 ## What It Does
 
-graph LR
-    A[900K Songs<br/>Kaggle Dataset] --> B[Polars ETL<br/>10x Faster]
-    B --> C[DuckDB<br/>1.5GB OLAP DB]
-    C --> D[FastAPI<br/>REST Endpoints]
-    C --> E[Streamlit<br/>Analytics Dashboard]
-    C --> F[Data Profiling<br/>Quality Reports]
+Kaggle Dataset (900K songs) → Polars ETL (10x faster) → DuckDB (1.5GB OLAP) → FastAPI/Streamlit/Profiling
     
 ## Key Features
 

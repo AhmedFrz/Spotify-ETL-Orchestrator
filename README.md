@@ -17,18 +17,8 @@
 
 ## What It Does
 
-┌─────────────────┐     ┌──────────────┐     ┌─────────────────┐
-│  900K Songs     │────▶│ Polars ETL   │────▶│   DuckDB        │
-│ Kaggle Dataset  │     │ 10x Faster   │     │ 1.5GB OLAP DB   │
-└─────────────────┘     └──────────────┘     └────────┬────────┘
-                                                       │
-                                ┌──────────────────────┼──────────────────────┐
-                                │                      │                      │
-                        ┌───────▼────────┐    ┌───────▼────────┐    ┌────────▼────────┐
-                        │   FastAPI      │    │   Streamlit    │    │ Data Profiling  │
-                        │ REST Endpoints │    │   Dashboard    │    │ Quality Reports │
-                        └────────────────┘    └────────────────┘    └─────────────────┘
-
+Kaggle Dataset (900K songs) → Polars ETL (10x faster) → DuckDB (1.5GB OLAP) → FastAPI/Streamlit/Profiling
+    
 ## Key Features
 
 ### Data Insights

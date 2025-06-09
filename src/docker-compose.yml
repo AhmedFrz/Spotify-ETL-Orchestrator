@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  app:
+    image: python:3.10-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+      - "8080:8080"
+    command: streamlit run dashboard.py
+    environment:
+      - PYTHONUNBUFFERED=1
+    # To run the Flask API instead, change the command to:
+    # command: python api.py

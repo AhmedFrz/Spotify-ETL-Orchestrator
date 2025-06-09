@@ -1,0 +1,10 @@
+polars
+pandas
+duckdb
+flask
+streamlit
+ydata-profiling
+kagglehub
+fastapi
+uvicorn 
+fastapi-cache2

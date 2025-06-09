@@ -58,30 +58,24 @@ Kaggle Dataset (900K songs) → Polars ETL (10x faster) → DuckDB (1.5GB OLAP) 
 
 ### Setup
 
-1. **Clone repository**
-```bash
-git clone https://github.com/yourusername/spotify-vault
-cd spotify-vault
-```
-
-2. **Create virtual environment**
+1. **Create virtual environment**
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. **Install dependencies**
+2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. **Configure Kaggle API**
+3. **Configure Kaggle API**
 ```bash
 # Create ~/.kaggle/kaggle.json with your credentials
 {"username":"your_username","key":"your_api_key"}
 ```
 
-5. **Run ETL pipeline**
+4. **Run ETL pipeline**
 ```bash
 python etl.py
 ```

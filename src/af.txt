@@ -1,0 +1,29 @@
+"dashboard.py
+"
+1. helps data exploration - quickly explore/visualize dataset stored in duckdb
+2. data quality insights - filer/search/preview
+3. Self service analytics - espcially useful for non-technical stakeholders, generate summary, download data as .csv for their use
+4 collaboration - can be used internally, teams can access across departments
+
+
+"api.py"
+1.enables  Data Access:
+    - exposes your songs data as a web API, making it easy for apps, dashboards, and analysts to access and 
+       -use the data w/o  needing database access  knowledge
+2. teams can work with upto date data
+3. enables self service for non-technical
+
+
+"docker-compose.yml"
+Purpose
+
+- this file is not used bz i am using my local machine - but it can be used for consistency and deployment
+
+- Defines how to run your app (dashboard/API) in a Docker container.
+- Automates environment setup and service startup.
+- Ensures consistency across different machines.
+
+Business use case:
+- Fast, one-command deployment for demos, testing, or production.
+Eliminates “works on my machine” issues.
+Supports scalable, cloud-ready deployment

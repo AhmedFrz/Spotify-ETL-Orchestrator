@@ -32,15 +32,19 @@ def main():
     pl_df = read_csv_with_polars(csv_path)
     print("Polars DataFrame loaded:")
     print(pl_df.head())
+    print("Total records (Polars):", pl_df.shape[0])
 
     # 2. Convert to Pandas
     pd_df = pl_df.to_pandas()
     print("Converted to Pandas DataFrame:")
     print(pd_df.head())
+    print("Total records (Pandas):", pd_df.shape[0])
 
     # 3. Store in DuckDB
     con = get_duckdb_connection(db_path)
     create_table_from_df(con, pd_df, table_name="songs")
+    result = con.execute("SELECT COUNT(*) FROM songs").fetchone()
+    print("Total records in DuckDB table 'songs':", result[0])
     print("Data loaded into DuckDB table 'songs'.")
 
 if __name__ == "__main__":

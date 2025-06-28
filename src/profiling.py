@@ -13,6 +13,7 @@ def generate_profile_report(table_name: str = "songs", db_path: str = None, outp
 
     # Connect to DuckDB and load data into pandas DataFrame
     con = get_duckdb_connection(db_path)
+
     # Limit to first 1000 rows for profiling
     df = con.execute(f"SELECT * FROM {table_name} LIMIT 1000").df()
     print(f"Loaded {len(df)} records from table '{table_name}' for profiling.")

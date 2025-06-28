@@ -1,3 +1,5 @@
 storage.db
 etl_orchestrator/__pycache__
 af_notes.md
+src\utils\__pycache__
+__pycache__

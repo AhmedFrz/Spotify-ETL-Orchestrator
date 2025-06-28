@@ -1,5 +1,4 @@
-# to run the file
-# streamlit run dashboard.py
+# to run the file - streamlit run dashboard.py
 
 import streamlit as st
 import duckdb

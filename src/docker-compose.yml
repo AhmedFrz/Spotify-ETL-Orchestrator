@@ -11,5 +11,6 @@ services:
     command: streamlit run dashboard.py
     environment:
       - PYTHONUNBUFFERED=1
+    
     # To run the Flask API instead, change the command to:
     # command: python api.py
